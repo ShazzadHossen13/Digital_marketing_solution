@@ -1,0 +1,620 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Web Development Companey
+Version:    1.0
+Last change:    24/12/20 [fixed Float bug, vf]
+Author Name:  Shazzad Hossen
+Primary use:    Business perpus 
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+-------------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+    margin:0px;
+    padding: 0px;
+    font-size: 14px;
+    background-color: #444444;
+    font-family: "Poppins", sans-serif;
+    color:#212529;
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #444444;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+    
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+p {
+    margin: 0;
+    /* color: #1f2732; */
+}
+/*
+==========================================
+    Common Css
+==========================================
+*/
+.sec-title{
+    text-align: center;
+}
+.sec-title .sub-title{
+    font-size: 10px;
+}
+.sec-title h2 span{
+    color: #8bc34a;
+}
+.bottom-style{
+position: relative;
+width: 40px;
+background-color:#8bc34a;
+height: 3px;
+margin: auto;
+top: 7px;
+}
+.bottom-style:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    background: #e8e8e8;
+    height: 1px;
+    top: 1px;
+    z-index: -9;
+}
+/*
+==========================================
+    Header Area
+==========================================
+*/
+.header_area{
+    background-color:  rgb(10, 55, 202);
+    height: 60px;
+}
+.mainmenu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ /* .mainmenu li{
+    position: relative;
+    display: inline-block;
+} */
+ .mainmenu li a{
+    color:rgb(255, 255, 255);
+    display: block;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 20px;
+} 
+/*
+==========================================
+    common Button
+==========================================
+*/
+.digisul a {
+    text-decoration: none;
+}
+.digisul-btn{
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #FB37A1;
+    color: #fff;
+    border-radius: 30px;
+    margin: 10px;
+}
+.V_btn {
+    background-color: #FB37A1;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* ==========================================
+    Section Part 1
+========================================== */
+.Section_one{
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #b4d2f7;
+}
+.left_area {
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 5rem;
+    line-height: 2rem;
+}
+.left_area h1 {
+    color: #0928f3;
+    font-weight: 900;
+}
+.left_area span {
+    color: #f804d0;
+    font-weight: 700;
+}
+.left_area p {
+    color: #51546b;
+    font-weight: 400;
+    margin-top: 25px;
+}
+.Quit_section {
+    margin-left: 4rem;
+    margin-top: 2rem;   
+}
+.Quit_section a {
+    text-decoration: none;
+}
+
+/* ==========================================
+    Image
+========================================== */
+.Image_Header img{
+    align-items: center;
+    padding: 5px;
+    width: 80%;
+    height: 80%;
+}
+
+
+/* ==========================================
+    Section Part 2
+========================================== */
+.Section_two{
+    width: 100%;
+    height: auto;
+    background: #5d697c;
+    padding: 5rem;
+}
+.Section_two_title span{
+    color: #ee04b0;
+ }
+.Section_two_title { 
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+.Work_process {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.Work_process img{
+    color: rgb(148, 148, 148);
+    width: 40px;
+    height: 2rem;
+}
+.Work_process p{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(217, 217, 217);
+}
+/* ==========================================
+    Section Part 3
+========================================== */
+.Section_three{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: #959eae;
+}
+.sec_tre_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 2rem;
+}
+.sec_tre_title span{
+    color: #ee04b0;
+}
+.Slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.myCard {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5rem 4rem;
+    height: auto;
+    width: auto;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 7px #c5c0c0;
+}
+.img_arrow img{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+}
+.img_arrow {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.send_arr {
+    transform: rotate(3.142rad);
+}
+.Slide_content {
+    position: absolute;
+    left: 12.5%;
+    bottom: 15%;
+    width: 75%;
+    color: white;
+    background: rgb(255, 255, 255);
+background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    height: 30%;
+}
+.card_b {
+    border-left: 5px solid #73BD07;
+}
+.Slide_content_inner{
+    display: flex;
+    padding: 2.5rem;
+
+}
+.digisul2 {
+    margin-left: 45%;
+}
+
+/* ==========================================
+    Section Part 4
+========================================== */
+.Section_four{
+    width: 100%;
+    height: 700px;
+    background-color: #968f8f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.sec_for_title {
+    text-align: center;
+    margin: 2rem;
+    font-size: 30px;
+    font-weight: 700;
+}
+.sec_for_title span{
+ color: rgb(255, 0, 212);
+}
+.Slider_two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+}
+.Card_details{
+    height: 60%;
+    width: 30%;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 30px 2px #d0d0d0;
+    align-items: center;
+    text-align: center;
+}
+.Image_d_card img{
+    align-items: center;
+    width:400px;
+    height:220px;
+}
+
+/* ==========================================
+    Section Part 5
+========================================== */
+.Section_five{
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
+}
+.secGrid {
+    display: flex;
+}
+.secFiveLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+}
+.secFiveLeft p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #0928f3;
+}
+.secFiveLeft span{
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+.left-Section-Five-Img img{
+    height: 450px;
+    width: 500px;
+}
+.secFiveRight {
+        margin-top: 12rem;
+        margin-left: 5rem;
+}
+.secFiveRight p{
+    text-align: left;
+}
+
+.img_slyde_btn {
+    background-color:transparent;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    width: fit-content;
+    margin-left: 30%;   
+    margin-top: -5%;
+    cursor: pointer;
+}
+.left_slyder {
+    border: none;
+    background: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_slyder img{
+    width:  40px;
+    height: 30px;
+}
+.right_slyder {
+    border: none;
+    background: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_slyder img{
+    width:  40px;
+    height: 30px;
+    transform: rotate(180deg);
+}
+/* ==========================================
+    Section Part 6
+========================================== */
+.Section_six{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding:  200px  10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eadd4e;
+}
+
+.section_six_title{
+    position: absolute;
+    margin-top: 100px;
+    left: 7rem;
+    text-align: left;
+    line-height: 2rem;
+}
+.line_draw {
+    margin-top: -100px;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.fast_idea {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.second_idea {
+    position: absolute;
+    bottom: 5rem;
+    left:650px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.thrd_idea {
+    position: absolute;
+    top: 250px;
+    right:500px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.numberthrd_content {
+    margin-top: 3rem;
+}
+.forth_idea {
+    position: absolute;
+    top: 130px;
+    right:150px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.number_Gredient {
+    margin-top: -75px;
+    margin-right: 15px;
+}
+
+
+/* ==========================================
+    Section Part 7
+========================================== */
+.Section_seven{
+    width: 100%;
+    height: 700px;
+    background-color: #d4d4d4;
+}
+.seven_title {
+    text-align: center;
+    padding-top: 2%;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+}
+.seven_title span{
+    color: #ff0088;
+}
+.card_section{
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.card_seven {
+    width: 30rem;
+    height: 25rem;
+    background-color: #5d697c;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+/* ==========================================
+    Section Part 8
+========================================== */
+.Section_eight{
+    width: 100%;
+    height: 400px;
+    background-color: #201854;
+}
+.main_pic_sec_seven {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.main_pic_sec_seven svg{
+   width: 100%;
+   height: 400px;
+}
+.join_comunity {
+    position: absolute;
+    top: 40px;
+    left: 40%;
+}
+.card_eight {
+    width: 30rem;
+    height: 15rem;
+    background-color: #5d697c;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+/* ==========================================
+    Section Part 9
+========================================== */
+.Section_nine{
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
+    color: #000000;
+}
+.titleOfNine{
+    padding: 100px 0;
+    font-size: 42px;
+    font-weight: 900;
+}
+.contactIcon {
+    grid-gap: 0;
+}
+.emailIcon{
+    width: 50px;
+    height: 50px;
+    background: #070bfe;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.callIcon{
+    width: 50px;
+    height: 50px;
+    background: #0645ff;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.extra {
+    padding: 0.5rem 0;
+    line-gap-override: 25px;
+}
+.myform {
+    padding-top: 100px;
+}
+
+/* ==========================================
+    Section Part 10
+========================================== */
+.Section_ten{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-color: #0645ff;
+    color: white;
+}
+.footer_foot{
+    
+    padding: 3rem;
+    margin-top: 3rem;
+}
+
+
+
+
