@@ -24,7 +24,7 @@ body{
     margin:0px;
     padding: 0px;
     font-size: 14px;
-    background-color: #444444;
+    background-color: #EFEFEF;
     font-family: "Poppins", sans-serif;
     color:#212529;
 }
@@ -90,7 +90,9 @@ top: 7px;
 */
 .header_area{
     background-color:  rgb(10, 55, 202);
-    height: 60px;
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
 .mainmenu ul{
     display: flex;
@@ -109,6 +111,7 @@ top: 7px;
     font-weight: 400;
     font-size: 16px;
     padding: 15px 20px;
+    text-decoration: none;
 } 
 /*
 ==========================================
@@ -138,7 +141,7 @@ top: 7px;
 ========================================== */
 .Section_one{
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     box-sizing: border-box;
     background-color: #b4d2f7;
@@ -187,7 +190,7 @@ top: 7px;
 .Section_two{
     width: 100%;
     height: auto;
-    background: #5d697c;
+    /* background: #5d697c; */
     padding: 5rem;
 }
 .Section_two_title span{
@@ -219,10 +222,11 @@ top: 7px;
     Section Part 3
 ========================================== */
 .Section_three{
-    position: relative;
     width: 100%;
-    height: 700px;
-    background-color: #959eae;
+    height: 1000px;
+    padding: 50px;
+    background-color: #effafa;
+    box-sizing: border-box;
 }
 .sec_tre_title {
     text-align: center;
@@ -246,11 +250,15 @@ top: 7px;
     padding: 5rem 4rem;
     height: auto;
     width: auto;
-    background: #f2f2f2;
+    background-color: #ffffff;
     overflow: hidden;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0 0 20px 7px #c5c0c0;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.myCard:hover {
+    background: #0645ff;
+    color: white;
 }
 .img_arrow img{
     height: 30px;
@@ -267,21 +275,17 @@ top: 7px;
     align-items: center;
     cursor: pointer;
 }
+.img_arrow:hover {
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
 .send_arr {
     transform: rotate(3.142rad);
+    color: white;
 }
 .Slide_content {
-    position: absolute;
-    left: 12.5%;
-    bottom: 15%;
-    width: 75%;
-    color: white;
-    background: rgb(255, 255, 255);
-background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-
-    border-bottom: none;
-    border-radius: 15px 15px 0 0;
-    height: 30%;
+    background-image: url('/assets/img/SVGfile/Rectangle_card_container.svg') no-repeat ;
+    box-sizing: border-box;
 }
 .card_b {
     border-left: 5px solid #73BD07;
@@ -289,7 +293,6 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 .Slide_content_inner{
     display: flex;
     padding: 2.5rem;
-
 }
 .digisul2 {
     margin-left: 45%;
@@ -300,8 +303,9 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 ========================================== */
 .Section_four{
     width: 100%;
-    height: 700px;
-    background-color: #968f8f;
+    height: 900px;
+    padding: 50px;
+    /* background-color: #968f8f; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,20 +328,30 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
     height: 90%;
 }
 .Card_details{
-    height: 60%;
-    width: 30%;
-    background: #f2f2f2;
+    height: 450px;
+    width: 500px;
+    padding: 10px;
+    background: #ffffff;
     overflow: hidden;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0 0 30px 2px #d0d0d0;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     align-items: center;
     text-align: center;
+    text-align:justify;
+}
+
+.Card_details:hover{
+    background: #070bfe;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
 }
 .Image_d_card img{
     align-items: center;
     width:400px;
     height:220px;
+    padding: 5px;
 }
 
 /* ==========================================
@@ -345,8 +359,8 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 ========================================== */
 .Section_five{
     width: 100%;
-    height: 700px;
-    background-color: #ffffff;
+    height: 900px;
+    /* background-color: #ffffff; */
 }
 .secGrid {
     display: flex;
@@ -368,21 +382,28 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
     color: #000000;
 }
 .left-Section-Five-Img img{
-    height: 450px;
-    width: 500px;
+    height: 550px;
+    width: 700px;
 }
 .secFiveRight {
         margin-top: 12rem;
         margin-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
 }
 .secFiveRight p{
     text-align: left;
+}
+.star {
+    background: url('/assets/img/SVGfile/Star\ 1.svg');
 }
 
 .img_slyde_btn {
     background-color:transparent;
     display: flex;
     gap: 15px;
+    padding: 10px;
     justify-content: space-between;
     width: fit-content;
     margin-left: 30%;   
@@ -428,7 +449,7 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
     padding:  200px  10px;
     display: flex;
     flex-direction: column;
-    background-color: #eadd4e;
+    /* background-color: #eadd4e; */
 }
 
 .section_six_title{
@@ -450,7 +471,7 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 }
 .fast_idea {
     position: absolute;
-    bottom: 0;
+    bottom: 3rem;
     left: 150px;
     width: 100px;
     height: 100px;
@@ -458,7 +479,7 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 }
 .second_idea {
     position: absolute;
-    bottom: 5rem;
+    bottom: 1rem;
     left:650px;
     width: 100px;
     height: 100px;
@@ -466,7 +487,7 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 }
 .thrd_idea {
     position: absolute;
-    top: 250px;
+    top: 13rem;
     right:500px;
     width: 100px;
     height: 100px;
@@ -474,10 +495,16 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 }
 .numberthrd_content {
     margin-top: 3rem;
+    margin-left: -3rem;
+    width: 15rem;
+    height: 10rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: justify;
 }
 .forth_idea {
     position: absolute;
-    top: 130px;
+    top: 8rem;
     right:150px;
     width: 100px;
     height: 100px;
@@ -494,7 +521,10 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 ========================================== */
 .Section_seven{
     width: 100%;
-    height: 700px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
     background-color: #d4d4d4;
 }
 .seven_title {
@@ -508,6 +538,7 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
     color: #ff0088;
 }
 .card_section{
+    height: 500px;
     padding-top: 8rem;
     display: flex;
     align-items: center;
@@ -515,12 +546,36 @@ background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
     gap: 5%;
 }
 .card_seven {
-    width: 30rem;
+    width: 25rem;
     height: 25rem;
     background-color: #5d697c;
     color: white;
     border: 1px solid transparent;
-    border-radius: 15px;
+    border-radius: 10px;
+}
+.card_seven_content {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding: 10px;
+}
+.card_seven_content h3{
+    font-weight: 700;
+}
+.card_seven_content p{
+    text-align: center;
+}
+.imga {
+    height: 250px;
+}
+.imga img {
+    height: 250px;
+    width: 300px;
+}
+.img_seven_sec{
+    display: flex;
+    gap: 20px;
 }
 /* ==========================================
     Section Part 8
